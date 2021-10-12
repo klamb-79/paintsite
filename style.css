@@ -1,12 +1,13 @@
 body,html {
   width: 100%;
-  height: 100%;
+  
   font-family: 'Montserrat', sans-serif;
   background: url(photo3.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: 0;
 }
 .modal-content{
   background-color: #fff0;
@@ -17,9 +18,10 @@ body,html {
   max-width: 600px;
 }
 h1{
-  font-family: 'Finger Paint', cursive;
+  font-family: 'Staatliches', cursive;
   font-size: 5rem;
-  color: white;
+  color: rgb(221, 236, 238);
+  
 }
 .box{
   height: 18rem;
@@ -35,6 +37,7 @@ h1{
 }
 
 .btn-primary{
+  /* margin-bottom: 50px; */
   background-color: black;
   border-color: black;
 }
@@ -52,4 +55,95 @@ h1{
 }
 img:hover{
   cursor: pointer;
+}
+
+
+
+.text{
+  
+  
+  padding: 20px;
+  top: 50px;
+  
+  
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,  1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 40px;
+
+}
+.gallery-container{
+  margin-top: 50px;
+  width: 75%;
+  height: 50%;
+}
+.gallery-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 12px;
+  transition: .5s ease-in-out;
+  box-shadow: 8px 8px 8px darkgrey;
+
+}
+
+.gallery-item .image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.gallery-item .image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%, 50%;
+  transition: .5s ease-in-out;
+
+}
+.footer{
+  width: 100%;
+  align-content: center;
+  background-color: brown;
+  height: 100%;
+}
+.fab {
+  color: white;
+  padding: 5px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+
+
+.link{
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: slategray;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  
+ }
+.link:hover{
+  color: white;
+}
+
+.creator{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ /* margin-top: 15px; */
+ padding: 20px;
+ text-align: right;
+ text-transform: capitalize;
+ color: whitesmoke;
 }

@@ -1,0 +1,243 @@
+*{
+  padding: 0;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+body{
+    padding:  0px;
+    margin: 5px;
+    margin-top: 0;
+    /* text-align: center; */
+}
+
+/* NAV BAR */
+
+nav{
+    background: #74eff3;
+    border-radius: 5px;
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 50px;
+    font-weight: bold;
+  }
+
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  .active{
+    background:#1b9bff;
+  }
+  .nav-link:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 952px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+      color: white;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  
+  
+
+
+
+
+
+
+
+/* BODY */
+.cover-img{
+    display: flex;
+    /* margin-top: 5px; */
+    background-image: url(./gallery/cover.jpg);
+    background-position: center;
+    background-color: rgb(22, 233, 233);
+    border-radius: 1em;
+    height: 35rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+    margin: 5px;
+}
+.cover-img:hover{
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(128, 99, 99, 0.15) 0px -10px 20px;
+}
+.cover-img h3{
+    color: honeydew;
+    font-size: 5em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px, 300px;
+    grid-gap: 20px;
+    margin-top: 25px;
+
+}
+.gallery-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 12px;
+    transition: .5s ease-in-out;
+    box-shadow: 8px 8px 8px darkgrey;
+
+}
+
+.gallery-item .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+.gallery-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50%, 50%;
+    transition: .5s ease-in-out;
+
+}
+.gallery-item:hover .image img{
+    transform: scale(1.5);
+
+}
+
+.footer{
+  margin-top: 15px;
+  width: 100%;
+  align-content: center;
+  background-color: brown;
+  height: 100%;
+}
+.fab {
+  color: white;
+  padding: 5px;
+}
+.icons{
+  display: flex;
+  justify-content: center;
+}
+.link{
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  color: slategray;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 15px;
+  
+ }
+a.link:hover{
+  color: white;
+}
+
+.creator{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ /* margin-top: 15px; */
+ padding: 20px;
+ text-align: right;
+ text-transform: capitalize;
+ color: whitesmoke;
+}
+
+
+
+
+
